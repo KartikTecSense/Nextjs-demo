@@ -42,10 +42,10 @@ const backoff = 300;
 let allProducts;
 let tries = 0;
 export const waitingFunction = async () => {
-  console.log("try 1 :", new Date());
-  if (tries === 0) await new Promise(res => setTimeout(res, 15000));
-  tries += 1;
-  console.log("try 2 :", new Date());
+  // console.log("try 1 :", new Date());
+  // if (tries === 0) await new Promise(res => setTimeout(res, 15000));
+  // tries += 1;
+  // console.log("try 2 :", new Date());
   let res = await fetchAllProducts();
   return res;
 }
