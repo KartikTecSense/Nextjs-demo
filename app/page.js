@@ -1,4 +1,4 @@
-import { waitingFunction } from "./lib/actions"
+import { waitingFunction } from "./actions"
 
 const page = async () => {
   let res = await waitingFunction();
